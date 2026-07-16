@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080604">
+  <meta name="description" content="ACFA Official public command dashboard.">
+  <title>ACFA Official | Command Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="matrixCanvas" aria-hidden="true"></canvas>
+  <div class="page-scan" aria-hidden="true"></div>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <img src="assets/lady-justice-logo.jpeg" alt="ACFA Lady Justice logo">
+        <div>
+          <span>ACFA OFFICIAL</span>
+          <strong>Command Center</strong>
+        </div>
+      </div>
+
+      <nav class="side-nav" aria-label="Dashboard navigation">
+        <a class="active" href="#dashboard"><span>▦</span>Dashboard</a>
+        <a href="#activities"><span>⚔</span>Activities</a>
+        <a href="#network"><span>🌐</span>Network</a>
+        <a href="#community"><span>◉</span>Community</a>
+        <a href="#join"><span>♟</span>Join ACFA</a>
+      </nav>
+
+      <div class="side-status panel">
+        <div class="status-line">
+          <span class="live-dot"></span>
+          <div>
+            <strong>Community Online</strong>
+            <small>All public systems active</small>
+          </div>
+        </div>
+
+        <div class="meter-block">
+          <div><span>Network</span><strong>98%</strong></div>
+          <div class="meter"><i style="width:98%"></i></div>
+        </div>
+
+        <div class="meter-block">
+          <div><span>Activity</span><strong>High</strong></div>
+          <div class="meter"><i style="width:86%"></i></div>
+        </div>
+      </div>
+
+      <a class="side-cta"
+         href="https://www.chess.com/club/and-chess-for-all-official?ref_id=545854877"
+         target="_blank" rel="noopener noreferrer">
+        Join ACFA Official
+      </a>
+    </aside>
+
+    <section class="workspace">
+      <header class="topbar">
+        <button class="menu-button" id="menuButton" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="top-title">
+          <span class="eyebrow">PUBLIC COMMUNITY INTERFACE</span>
+          <h1>ACFA Command Dashboard</h1>
+        </div>
+
+        <div class="top-actions">
+          <a href="https://devilsgambit22.github.io/acfa-network2/" target="_blank" rel="noopener noreferrer">ACFA Network</a>
+          <span id="clock">--:--</span>
+        </div>
+      </header>
+
+      <main id="dashboard">
+        <section class="hero-grid">
+          <article class="panel intro-panel reveal">
+            <div>
+              <span class="eyebrow">AND CHESS FOR ALL OFFICIAL</span>
+              <h2>Every Player Belongs.<br><em>Every Move Matters.</em></h2>
+              <p>
+                A welcoming Chess.com community for players of every rating.
+                Compete, improve, make friends, and enjoy chess through matches,
+                events, Vote Chess, streams, and community projects.
+              </p>
+            </div>
+
+            <div class="intro-actions">
+              <a class="button primary" href="https://www.chess.com/club/and-chess-for-all-official?ref_id=545854877" target="_blank" rel="noopener noreferrer">Join ACFA</a>
+              <a class="button secondary" href="https://devilsgambit22.github.io/acfa-network2/" target="_blank" rel="noopener noreferrer">Explore Network</a>
+            </div>
+          </article>
+
+          <article class="panel logo-panel reveal">
+            <div class="card-bar">
+              <span>JUSTICE CORE</span>
+              <b>ONLINE</b>
+            </div>
+
+            <div class="logo-stage">
+              <div class="orbit orbit-one"><span>♜</span><span>♞</span></div>
+              <div class="orbit orbit-two"><span>♝</span><span>♛</span></div>
+              <div class="logo-scan"></div>
+              <button id="justiceLogo" aria-label="ACFA Lady Justice logo">
+                <img src="assets/lady-justice-logo.jpeg" alt="ACFA Lady Justice logo">
+              </button>
+            </div>
+
+            <div class="logo-meta">
+              <div><span>SYMBOL</span><strong>LADY JUSTICE</strong></div>
+              <div><span>STATUS</span><strong>MONITORING</strong></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="stats-grid reveal" aria-label="ACFA activity status">
+          <article class="stat-card"><span class="stat-icon">⚔</span><div><small>DAILY MATCHES</small><strong>ACTIVE</strong><p>Club competition</p></div></article>
+          <article class="stat-card"><span class="stat-icon">♙</span><div><small>VOTE CHESS</small><strong>ONLINE</strong><p>Team analysis</p></div></article>
+          <article class="stat-card"><span class="stat-icon">🏆</span><div><small>CLUB EVENTS</small><strong>OPEN</strong><p>Arenas and Swiss</p></div></article>
+          <article class="stat-card"><span class="stat-icon">▶</span><div><small>LIVE CHESS</small><strong>READY</strong><p>Community streams</p></div></article>
+        </section>
+
+        <section class="dashboard-grid" id="activities">
+          <article class="panel actions-panel reveal">
+            <div class="section-head">
+              <div><span class="eyebrow">QUICK ACTIONS</span><h3>Activity Modules</h3></div>
+              <b>MOD-01</b>
+            </div>
+
+            <div class="quick-grid">
+              <a href="https://www.chess.com/clubs/matches/and-chess-for-all-official" target="_blank" rel="noopener noreferrer"><span>⚔</span><strong>Daily Matches</strong><small>Open match center</small></a>
+              <a href="https://www.chess.com/club/votechess/and-chess-for-all-official" target="_blank" rel="noopener noreferrer"><span>♙</span><strong>Vote Chess</strong><small>Open team games</small></a>
+              <a href="https://www.chess.com/clubs/events/and-chess-for-all-official" target="_blank" rel="noopener noreferrer"><span>🏆</span><strong>Club Events</strong><small>View event center</small></a>
+              <a href="https://www.chess.com/clubs/forum/and-chess-for-all-official" target="_blank" rel="noopener noreferrer"><span>☰</span><strong>Club Forums</strong><small>Open discussions</small></a>
+              <a href="https://www.twitch.tv/dasoulking98" target="_blank" rel="noopener noreferrer"><span>▶</span><strong>Watch Live</strong><small>Open Twitch</small></a>
+              <a href="https://discord.gg/Atk2GKfgU" target="_blank" rel="noopener noreferrer"><span>◉</span><strong>Discord</strong><small>Join community</small></a>
+            </div>
+          </article>
+
+          <article class="panel feed-panel reveal" id="community">
+            <div class="section-head">
+              <div><span class="eyebrow">COMMAND FEED</span><h3>Community Activity</h3></div>
+              <b>LIVE</b>
+            </div>
+
+            <div class="feed-list">
+              <div><span>NOW</span><p><strong>Community systems online</strong><small>Public dashboard verified</small></p></div>
+              <div><span>01</span><p><strong>Daily Match Center</strong><small>Represent ACFA in team play</small></p></div>
+              <div><span>02</span><p><strong>Vote Chess Online</strong><small>Analyze and vote together</small></p></div>
+              <div><span>03</span><p><strong>Event Center Ready</strong><small>Arenas, Swiss, Chess960</small></p></div>
+            </div>
+          </article>
+
+          <article class="panel network-panel reveal" id="network">
+            <div class="section-head">
+              <div><span class="eyebrow">NETWORK STATUS</span><h3>ACFA Ecosystem</h3></div>
+              <b>NET-04</b>
+            </div>
+
+            <div class="network-grid">
+              <div class="node primary-node"><span>01</span><strong>ACFA Official</strong><small>Main community</small></div>
+              <div class="node"><span>02</span><strong>ACFA San Antonio</strong><small>Local + online</small></div>
+              <div class="node"><span>03</span><strong>Community Tools</strong><small>Digital projects</small></div>
+              <div class="node"><span>04</span><strong>Future Initiatives</strong><small>Always evolving</small></div>
+            </div>
+
+            <a class="network-link" href="https://devilsgambit22.github.io/acfa-network2/" target="_blank" rel="noopener noreferrer">Open ACFA Network →</a>
+          </article>
+
+          <article class="panel health-panel reveal">
+            <div class="section-head">
+              <div><span class="eyebrow">SYSTEM VERIFICATION</span><h3>Module Health</h3></div>
+              <b class="verified">VERIFIED</b>
+            </div>
+
+            <div class="health-list">
+              <div><span>Daily Matches</span><strong>ONLINE</strong></div>
+              <div><span>Vote Chess</span><strong>ONLINE</strong></div>
+              <div><span>Club Events</span><strong>ONLINE</strong></div>
+              <div><span>Forums</span><strong>ONLINE</strong></div>
+              <div><span>ACFA Network</span><strong>CONNECTED</strong></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="panel join-panel reveal" id="join">
+          <div>
+            <span class="eyebrow">YOUR MOVE</span>
+            <h3>Take your place at the board.</h3>
+            <p>Competition, friendship, improvement, and community—all in one place.</p>
+          </div>
+
+          <div class="join-actions">
+            <a class="button primary" href="https://www.chess.com/club/and-chess-for-all-official?ref_id=545854877" target="_blank" rel="noopener noreferrer">Join ACFA Official</a>
+            <a class="button secondary" href="https://devilsgambit22.github.io/acfa-network2/" target="_blank" rel="noopener noreferrer">Visit Website</a>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <span>ACFA OFFICIAL • EVERY PLAYER BELONGS • EVERY MOVE MATTERS</span>
+        <small>Public Command Dashboard v2.0</small>
+      </footer>
+    </section>
+  </div>
+
+  <div class="legacy-overlay" id="legacyOverlay" aria-hidden="true">
+    <div class="legacy-card">
+      <div>♛</div>
+      <span class="eyebrow">ACFA LEGACY MODE</span>
+      <h3>Built in memory of Brandon.</h3>
+      <p>Every player belongs. Every move matters.</p>
+      <button id="closeLegacy">Return to dashboard</button>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
