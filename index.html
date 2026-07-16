@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080604">
+  <meta name="description" content="And Chess For All Official public forum dashboard.">
+  <title>ACFA Official | Forum Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="matrixCanvas" aria-hidden="true"></canvas>
+  <div class="page-scan" aria-hidden="true"></div>
+
+  <main class="dashboard-shell">
+    <header class="dashboard-header panel reveal">
+      <div class="brand-lockup">
+        <img src="assets/lady-justice-logo.jpeg" alt="ACFA Lady Justice logo">
+        <div>
+          <span class="eyebrow">PUBLIC COMMUNITY DASHBOARD</span>
+          <h1>And Chess For All Official</h1>
+        </div>
+      </div>
+      <div class="system-status"><i></i><span>Community Online</span></div>
+    </header>
+
+    <section class="hero-grid">
+      <article class="intro-panel panel reveal">
+        <span class="eyebrow">EVERY PLAYER BELONGS • EVERY MOVE MATTERS</span>
+        <h2>A place at the board<br>for every chess player.</h2>
+        <p>
+          Welcome to <strong>And Chess For All Official (ACFA)</strong>, an active and welcoming
+          Chess.com community for players of every rating. Compete, improve, make friends,
+          and enjoy the game with people who believe everyone deserves a place at the board.
+        </p>
+        <p>
+          ACFA brings members together through Daily Team Matches, Vote Chess, arenas,
+          Swiss tournaments, Chess960, live chess streams, club discussions, and community
+          projects. Participation is always optional, and every member is encouraged to join
+          in at their own pace.
+        </p>
+        <p>
+          Whether you are completely new to chess, returning to the game, or an experienced
+          competitor, ACFA offers friendship, competition, collaboration, and a growing network
+          built around a shared love of chess.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary"
+             href="https://www.chess.com/club/and-chess-for-all-official?ref_id=545854877"
+             target="_blank" rel="noopener noreferrer">Join ACFA Official</a>
+          <a class="button secondary"
+             href="https://devilsgambit22.github.io/acfa-network2/"
+             target="_blank" rel="noopener noreferrer">Visit ACFA Network</a>
+        </div>
+      </article>
+
+      <article class="justice-panel panel reveal">
+        <div class="panel-bar"><span>JUSTICE CORE</span><b>ONLINE</b></div>
+        <div class="justice-stage">
+          <div class="orbit orbit-one"><span>♜</span><span>♞</span></div>
+          <div class="orbit orbit-two"><span>♝</span><span>♛</span></div>
+          <div class="logo-scan"></div>
+          <button id="justiceLogo" aria-label="ACFA Lady Justice logo">
+            <img src="assets/lady-justice-logo.jpeg" alt="ACFA Lady Justice logo">
+          </button>
+        </div>
+        <div class="justice-meta">
+          <div><span>SYMBOL</span><strong>LADY JUSTICE</strong></div>
+          <div><span>STATUS</span><strong>MONITORING THE BOARD</strong></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="activity-panel panel reveal">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">EVENTS & ACTIVITIES</span>
+          <h3>Everything happening inside ACFA</h3>
+        </div>
+        <span class="verified"><i></i> ALL MODULES ONLINE</span>
+      </div>
+
+      <div class="activity-grid">
+        <article><span>⚔</span><strong>Daily Team Matches</strong><small>Represent ACFA against partner clubs.</small></article>
+        <article><span>♙</span><strong>Vote Chess</strong><small>Analyze, discuss, and vote together.</small></article>
+        <article><span>🏆</span><strong>Arenas</strong><small>Fast-paced community competition.</small></article>
+        <article><span>🎯</span><strong>Swiss Tournaments</strong><small>Structured events for every rating.</small></article>
+        <article><span>♜</span><strong>Chess960</strong><small>Creative positions and fresh ideas.</small></article>
+        <article><span>▶</span><strong>Live Chess Streams</strong><small>Play with members and watch live.</small></article>
+      </div>
+    </section>
+
+    <section class="cta-panel panel reveal">
+      <div>
+        <span class="eyebrow">YOUR MOVE</span>
+        <h3>Join a growing community where friendship, competition, and chess come together.</h3>
+        <p>Everyone is welcome at the board.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="button primary"
+           href="https://www.chess.com/club/and-chess-for-all-official?ref_id=545854877"
+           target="_blank" rel="noopener noreferrer">Join the Club</a>
+        <a class="button secondary"
+           href="https://devilsgambit22.github.io/acfa-network2/"
+           target="_blank" rel="noopener noreferrer">Explore Our Website</a>
+      </div>
+    </section>
+
+    <footer>
+      <span>ACFA OFFICIAL • EVERY PLAYER BELONGS • EVERY MOVE MATTERS</span>
+      <small>Forum Dashboard v3.0</small>
+    </footer>
+  </main>
+
+  <div class="legacy-overlay" id="legacyOverlay" aria-hidden="true">
+    <div class="legacy-card">
+      <div>♛</div>
+      <span class="eyebrow">ACFA LEGACY MODE</span>
+      <h3>Built in memory of Brandon.</h3>
+      <p>Every player belongs. Every move matters.</p>
+      <button id="closeLegacy">Return to dashboard</button>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
